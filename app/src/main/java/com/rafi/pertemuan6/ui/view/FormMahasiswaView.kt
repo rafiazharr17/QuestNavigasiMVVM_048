@@ -69,6 +69,19 @@ fun FormMahasiswa(
             }
         )
 
+        TextField(
+            modifier = Modifier.fillMaxWidth()
+                .padding(5.dp),
+            value = textNim,
+            onValueChange = {textNim = it},
+            label = {
+                Text("Nomor Induk Mahasiswa")
+            },
+            placeholder = {
+                Text("Masukkan NIM Anda")
+            }
+        )
+
         Row {
             listGender.forEach { item ->
                 Row(
