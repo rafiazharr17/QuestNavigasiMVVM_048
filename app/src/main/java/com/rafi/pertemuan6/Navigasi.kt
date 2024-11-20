@@ -26,5 +26,12 @@ fun Navigasi(
     Scaffold { isiPadding ->
         val uiState by viewModel.dataModel.collectAsState()
 
+        NavHost(
+            modifier = modifier.padding(isiPadding),
+            navController = navHost,
+            startDestination = Halaman.Form.name
+        ){
+
+        }
     }
 }
