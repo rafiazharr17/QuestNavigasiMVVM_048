@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.rafi.pertemuan6"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.rafi.pertemuan6"
