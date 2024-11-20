@@ -1,9 +1,14 @@
 package com.rafi.pertemuan6
 
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.rafi.pertemuan6.ui.viewmodel.MahasiswaViewModel
 
@@ -18,5 +23,8 @@ fun Navigasi(
     viewModel: MahasiswaViewModel = viewModel(),
     navHost: NavHostController = rememberNavController()
 ){
+    Scaffold { isiPadding ->
+        val uiState by viewModel.dataModel.collectAsState()
 
+    }
 }
